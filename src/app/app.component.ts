@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'comunicacao-entre-componentes2';
+  public ultimaMensagem: string = "";
+
+  public receberMensagem(mensagem: any) {
+    this.ultimaMensagem = mensagem;
+  }
 }
